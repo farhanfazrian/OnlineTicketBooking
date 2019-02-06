@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<title>Online Movie Ticket Booking</title>
+<meta charset="utf-8" />
+<style>
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: #6b796c;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 50%;
+}
+.parent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 50px;
+	border: 1px solid black;	
+}
+</style>
+
+</head>
+<body>
+	<div class="parent">
+		<div class="container">
+		<h5 class="text-center" style="font-size: 25px">Welcome To Online Movie Ticket Booking</h5>
+			<h5 class="text-center" style="font-size: 25px">Sign In</h5>
+			<div th:if="${param.error}">
+				<p style="color: red">Email and Password do not match/p>
+			</div>
+			<div th:if="${param.logout}">
+				<h1 style="color: blue">Logged out.</h1>
+			</div>
+			<form th:action="@{/login}" method="post">
+				<div class="form-group">
+					<label for="username">User Name: </label> <input type="text"
+						class="form-control" id="username" placeholder="Enter UserName"
+						name="username" />
+				</div>
+				<div class="form-group">
+					<label for="password">Password: </label> <input type="password"
+						class="form-control" id="password" placeholder="Enter Password"
+						name="password" />
+				</div>
+				<button style="display:" type="submit">Login</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

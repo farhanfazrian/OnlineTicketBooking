@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Online Movie Ticket Booking</title>
+</head>
+
+<style>
+.container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	max-width: 50%;
+}
+
+button {
+	background-color: #6b796c;
+	color: white;
+	padding: 10px 18px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+}
+
+input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 12px;
+}
+
+.parent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mid {
+	padding-left: 20px;
+	padding-right: 25px;
+}
+</style>
+<body>
+	<div class="parent">
+		<div class="container">
+			<h3>Order Details</h3>
+			<table>
+				<tr>
+					<td>Order Id</td>
+					<td class="mid">:</td>
+					<td><input type="text" th:each="date_time: ${dates}"
+						th:value="${date_time.id_ticket}" name="orderId" readonly></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td class="mid">:</td>
+					<td><input id="email1" th:each="cust:${cus}"
+						th:value="${cust.email}" type='text' name='email' readonly>
+					</td>
+				</tr>
+				<tr>
+					<td>Movie</td>
+					<td class="mid">:</td>
+					<td><input type="text" th:each="date_time: ${dates}"
+						th:value="${date_time.film}" name="orderId" readonly></td>
+				</tr>
+				<tr>
+					<td>Date & Time</td>
+					<td class="mid">:</td>
+					<td><input type="text" th:each="date_time: ${dates}"
+						th:value="${date_time.date}+' : '+${date_time.start_time}+'-'+${date_time.end_time}"
+						name="orderId" readonly></td>
+				</tr>
+				<tr>
+					<td>Quantity</td>
+					<td class="mid">:</td>
+					<td><input type="text" name="quantity"
+						th:each="quantity:${qty}" th:value="${quantity}" readonly></td>
+				</tr>
+				<tr>
+					<td><form th:action="@{/logout}" method="POST">
+							<button type="submit">Logout</button>
+						</form></td>
+					<td><form th:action="@{/}" method="GET">
+							<button type="submit">Back</button>
+						</form></td>
+				</tr>
+			</table>
+
+		</div>
+
+
+	</div>
+</body>
+</html>
