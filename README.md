@@ -1,7 +1,7 @@
 # OnlineTicketBooking
 Online Movie Ticket Booking With Java Spring Boot
 
- Merupakan sebuah aplikasi yang menggambarkan aktivitas booking tiket bioskop berdasarkan jadwal dan kuota masing-masing tiket. Aplikasi ini dibangun dengan menggunakan bahasa java dengan memanfaatkan Framework Spring boot. Untuk bagian User Interface diimplementasikan dengan Thymeleaf, HTML dan CSS.
+ Merupakan sebuah aplikasi yang menggambarkan aktivitas booking tiket bioskop berdasarkan jadwal dan kuota masing-masing tiket. Aplikasi ini dibangun dengan menggunakan bahasa java dengan memanfaatkan Framework Spring boot. Untuk bagian User Interface diimplementasikan dengan Thymeleaf, HTML dan CSS. Terdapat beberapa tabel yang berguna untuk penyimpanan data dari aplikasi ini yang dapat dilihat pada "CreateTable.sql".
  
  Batasan Aplikasi :
 1.Sistem ini hanya menggunakan 1 bioskop saja
