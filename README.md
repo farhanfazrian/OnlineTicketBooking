@@ -5,11 +5,11 @@ Online Movie Ticket Booking With Java Spring Boot
  
  Batasan Aplikasi :
  
-1.Sistem ini hanya menggunakan 1 bioskop saja
-2.Data customer sudah ada sebelumnya
-3.Data tiket beserta jumlahnya sudah ada sebelumnya
-4.Proses penjualan hanya order saja. Proses pembayaran diluar ruang lingkup pekerjaan
-5.Aplikasi ini hanya menggambarkan aktivitas user.
+1. Sistem ini hanya menggunakan 1 bioskop saja
+2. Data customer sudah ada sebelumnya
+3. Data tiket beserta jumlahnya sudah ada sebelumnya
+4. Proses penjualan hanya order saja. Proses pembayaran diluar ruang lingkup pekerjaan
+5. Aplikasi ini hanya menggambarkan aktivitas user.
 
 Detail Aplikasi :
 
