@@ -23,9 +23,12 @@ Detail Aplikasi :
 6. Jika Sudah berhasil memilih jadwal maka user dimina memasukan jumlah tiket yang akan dibooking.
 7. Saat Proses booking berhasil maka sistem akan menampilkan receipt mengenai detil dari booking yang dilakukan.
 8. Sistem juga akan melakukan update kuota dari tiket yang dipesan.
-9  Jika booking gagal dilakukan karena pengguna melakukan booking pada hari yang sama namun waktu tayangnya sudah terlewat 
+9. Jika booking gagal dilakukan karena pengguna melakukan booking pada hari yang sama namun waktu tayangnya sudah terlewat 
    maka sistem akan menampilkan pesan error yang memberi tahu bahwa jadwal yg dipilih sudah lewat waktu tayangnya.
    10 Jika Booking gagal dilakukan karena pengguna melakukan booking melebihi kuota yang ada, maka sistem akan menampilkan        pesan eror yang memberi tahu bahwa jumlah tiket yang dipesan melebihi kuota yang ada
+10.Terdapat File Query insert yang berisi contoh insert pada masing-masing table pada aplikasi ini.
+
+Note : Untuk password login yang digunakan adalah "123456".
 
 
 
